@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pack de Manuales Digitales · Webinar de Microbiología del Vino</title>
+  <meta name="description" content="Consigue los 6 manuales digitales del Webinar de Microbiología del Vino impartido por José Guerrero Consultor. Oferta exclusiva por solo $409 MXN, solo hasta las 10:30 pm. Paga con PayPal, depósito o transferencia." />
+  <meta name="keywords" content="vino, manuales digitales, microbiología del vino, webinar, enología, vinificación, análisis sensorial" />
+  <meta property="og:title" content="Pack de Manuales Digitales · Webinar de Microbiología del Vino" />
+  <meta property="og:description" content="6 manuales digitales por solo $409 MXN. Oferta exclusiva para asistentes del webinar, ¡solo hasta las 10:30 pm!" />
+  <meta property="og:image" content="poster.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%B7%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #1a060b; --bg-deep: #12040a; --panel: #240910; --chip: #1c070d;
+      --panel2: #2e0b14; --wine: #4a0f1d; --wine-mid: #6b1626;
+      --gold: #d9a84e; --gold-l: #e9c87e; --gold-d: #b98a2f; --gold-dd: #c99a3f;
+      --cream: #f7efe0; --cream2: #f3e3bd; --sand: #d9c3a0; --muted: #c9b18f;
+      --faint: #a98a63; --dim: #8a6f52; --sand2: #e8d5ae; --sand3: #f0d9a8;
+      --ink: #3a0d17; --wa: #25d366; --ok: #34d399;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+      background: linear-gradient(180deg, #240910, var(--bg) 55%, var(--bg-deep));
+      color: var(--cream); font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { flex: 1; }
+    img { max-width: 100%; }
+    ::selection { background: rgba(217, 168, 78, .4); color: #fdf6e9; }
+    .ic { width: 1.15em; height: 1.15em; flex: none; }
+    .serif { font-family: 'Playfair Display', Georgia, serif; }
+    .mono { font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; }
+
+    /* ── Header ── */
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(26, 6, 11, .9);
+      -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(217, 168, 78, .2);
+    }
+    .header-inner {
+      max-width: 72rem; margin: 0 auto; min-height: 4rem; padding: .6rem 1rem;
+      display: flex; align-items: center; justify-content: space-between; gap: .75rem;
+    }
+    .brand { display: flex; align-items: center; gap: .65rem; }
+    .brand-logo {
+      width: 2.25rem; height: 2.25rem; flex: none; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-l), var(--gold-d));
+      color: var(--ink); display: flex; align-items: center; justify-content: center;
+    }
+    .brand-name { margin: 0; font-family: 'Playfair Display', serif; font-weight: 800; font-size: .95rem; color: var(--cream2); }
+    .brand-sub { margin: 0; font-size: .7rem; color: #cfa96a; }
+    .header-right { display: flex; align-items: center; gap: .65rem; }
+    .cd-chip {
+      display: none; align-items: center; gap: .4rem; border-radius: 999px;
+      border: 1px solid rgba(217, 168, 78, .3); background: var(--panel2);
+      padding: .4rem .85rem; font-family: ui-monospace, Menlo, monospace;
+      font-size: .78rem; font-weight: 700; color: var(--sand3);
+      font-variant-numeric: tabular-nums;
+    }
+    .cd-chip .ic { color: var(--gold-l); }
+    @media (min-width: 768px) { .cd-chip { display: inline-flex; } }
+    .btn-mini {
+      display: inline-flex; align-items: center; height: 2.5rem; padding: 0 1.15rem;
+      border-radius: .75rem; background: linear-gradient(90deg, var(--gold-l), var(--gold-dd));
+      color: var(--ink); font-weight: 700; font-size: .9rem; text-decoration: none; transition: .2s;
+    }
+    .btn-mini:hover { filter: brightness(1.1); }
+
+    /* ── Hero ── */
+    .hero { position: relative; overflow: hidden; }
+    .glow { position: absolute; border-radius: 50%; filter: blur(70px); pointer-events: none; }
+    .glow-1 { top: -8rem; left: 50%; transform: translateX(-50%); width: 52rem; height: 24rem; background: rgba(122, 30, 47, .4); }
+    .glow-2 { top: 10rem; right: -6rem; width: 18rem; height: 18rem; background: rgba(217, 168, 78, .15); }
+    .hero-grid {
+      position: relative; max-width: 72rem; margin: 0 auto; padding: 3rem 1rem 3.5rem;
+      display: grid; gap: 2.5rem;
+    }
+    @media (min-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr 1fr; align-items: center; gap: 3rem; padding-top: 4rem; padding-bottom: 5rem; }
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: .45rem; border-radius: 999px;
+      border: 1px solid rgba(217, 168, 78, .5); background: var(--panel2);
+      padding: .45rem 1rem; font-size: .75rem; font-weight: 600; color: var(--sand3);
+    }
+    .badge .ic { color: var(--gold-l); }
+    .presenter { margin: .8rem 0 .2rem; font-size: .9rem; font-weight: 600; font-style: italic; color: #cfa96a; }
+    .presenter b { color: var(--gold-l); font-weight: 600; }
+    h1 {
+      margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 900;
+      font-size: 2.6rem; line-height: 1.08; color: var(--cream);
+    }
+    @media (min-width: 640px) { h1 { font-size: 3.2rem; } }
+    @media (min-width: 1024px) { h1 { font-size: 3.75rem; } }
+    h1 .gold-text {
+      background: linear-gradient(90deg, var(--gold-l), var(--gold), var(--gold-d));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .lead { margin: 1.25rem 0 0; max-width: 36rem; font-size: 1.05rem; line-height: 1.7; color: var(--sand); }
+    .lead b { color: var(--cream2); }
+    .price-row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: .5rem 1rem; margin-top: 2rem; }
+    .price-label { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.5rem; color: var(--gold-l); }
+    .price {
+      font-family: 'Playfair Display', serif; font-weight: 900; font-size: 4.2rem;
+      line-height: 1; color: var(--cream2); text-shadow: 0 4px 16px rgba(217, 168, 78, .35);
+    }
+    @media (min-width: 640px) { .price { font-size: 4.5rem; } }
+    .price-cur { font-weight: 600; font-size: 1.1rem; color: #cfa96a; padding-bottom: .4rem; }
+    .countdown-card {
+      display: inline-flex; flex-direction: column; gap: .75rem; margin-top: 1.75rem;
+      border: 1px solid rgba(217, 168, 78, .35); background: rgba(46, 11, 20, .8);
+      border-radius: 1rem; padding: 1.25rem 1.4rem;
+      -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    }
+    .cd-label { display: flex; align-items: center; gap: .5rem; font-size: .95rem; font-weight: 700; color: var(--sand3); }
+    .cd-label .ic { color: var(--gold-l); }
+    .cd-cells { display: flex; align-items: center; gap: .5rem; }
+    .cd-colon { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.5rem; color: var(--gold); padding-bottom: 1.1rem; }
+    .cd-cell {
+      width: 4.2rem; padding: .6rem .5rem; text-align: center; border-radius: .75rem;
+      border: 1px solid rgba(217, 168, 78, .3); background: var(--chip);
+    }
+    .cd-num {
+      font-family: ui-monospace, Menlo, monospace; font-size: 1.9rem; font-weight: 700;
+      color: var(--cream2); font-variant-numeric: tabular-nums; line-height: 1.1;
+    }
+    .cd-unit { margin-top: .2rem; font-size: .6rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #cfa96a; }
+    .cd-note { font-size: .7rem; color: var(--faint); }
+    .cta-row { display: flex; flex-direction: column; gap: .8rem; margin-top: 2rem; }
+    @media (min-width: 640px) { .cta-row { flex-direction: row; } }
+    .btn-gold {
+      position: relative; display: inline-flex; align-items: center; justify-content: center;
+      gap: .55rem; min-height: 3.25rem; padding: .8rem 1.75rem; border-radius: .75rem;
+      background: linear-gradient(90deg, var(--gold-l), var(--gold), var(--gold-dd));
+      color: var(--ink); font-weight: 700; font-size: 1rem; text-decoration: none;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .4); overflow: hidden; transition: .2s;
+    }
+    .btn-gold::after {
+      content: ''; position: absolute; top: 0; bottom: 0; width: 33%;
+      background: rgba(255, 255, 255, .25); filter: blur(8px); pointer-events: none;
+      transform: translateX(-130%) skewX(-18deg);
+      animation: shine-sweep 3.5s ease-in-out infinite;
+    }
+    .btn-gold:hover { filter: brightness(1.1); transform: scale(1.02); }
+    .btn-gold:active { transform: scale(.98); }
+    .btn-outline {
+      display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+      min-height: 3.25rem; padding: .8rem 1.75rem; border-radius: .75rem;
+      border: 2px solid rgba(217, 168, 78, .5); background: rgba(46, 11, 20, .6);
+      color: var(--sand3); font-weight: 700; font-size: 1rem; text-decoration: none;
+      -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: .2s;
+    }
+    .btn-outline:hover { border-color: var(--gold); background: var(--ink); }
+    .poster-wrap { position: relative; width: 100%; max-width: 28rem; margin: 0 auto; }
+    @media (min-width: 1024px) { .poster-wrap { max-width: none; } }
+    .poster-glow {
+      position: absolute; inset: -1rem; border-radius: 2rem; filter: blur(24px);
+      background: linear-gradient(135deg, rgba(217, 168, 78, .3), transparent, rgba(122, 30, 47, .4));
+    }
+    .poster-frame {
+      position: relative; border: 2px solid rgba(217, 168, 78, .6); border-radius: 1.5rem;
+      overflow: hidden; box-shadow: 0 25px 60px rgba(0, 0, 0, .6);
+    }
+    .poster-frame img { display: block; width: 100%; height: auto; }
+    .float-badge {
+      position: absolute; top: -1rem; right: -.5rem; z-index: 2; transform: rotate(3deg);
+      border: 1px solid rgba(217, 168, 78, .6); background: var(--wine);
+      border-radius: .75rem; padding: .6rem 1rem; box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
+      animation: float-y 6s ease-in-out infinite;
+    }
+    @media (min-width: 640px) { .float-badge { right: -1.5rem; } }
+    .float-badge .t1 { margin: 0; font-size: .72rem; font-weight: 900; letter-spacing: .05em; text-transform: uppercase; color: var(--gold-l); }
+    .float-badge .t2 { margin: .1rem 0 0; font-size: .68rem; color: var(--sand3); }
+
+    /* ── Franja de confianza ── */
+    .strip { border-top: 1px solid rgba(217, 168, 78, .2); border-bottom: 1px solid rgba(217, 168, 78, .2); background: rgba(28, 7, 13, .8); }
+    .strip-inner {
+      max-width: 72rem; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 1rem; padding: 1.25rem 1rem;
+    }
+    @media (min-width: 640px) { .strip-inner { grid-template-columns: repeat(4, 1fr); } }
+    .strip-item { display: flex; align-items: center; justify-content: center; gap: .6rem; font-size: .9rem; font-weight: 600; color: var(--sand2); }
+    .strip-item .ic { color: var(--gold-l); }
+
+    /* ── Secciones ── */
+    .section { max-width: 72rem; margin: 0 auto; padding: 4rem 1rem; scroll-margin-top: 5rem; }
+    @media (min-width: 640px) { .section { padding: 5rem 1rem; } }
+    .sec-title { max-width: 42rem; margin: 0 auto 2.75rem; text-align: center; }
+    .sec-kicker { margin: 0 0 .5rem; font-size: .72rem; font-weight: 800; letter-spacing: .25em; text-transform: uppercase; color: var(--gold); }
+    .sec-title h2 { margin: 0; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 2rem; color: var(--cream); }
+    @media (min-width: 640px) { .sec-title h2 { font-size: 2.35rem; } }
+    .sec-sub { margin: .8rem 0 0; font-size: .95rem; line-height: 1.65; color: var(--muted); }
+
+    /* ── Manuales ── */
+    .manuals-grid { display: grid; gap: 1.25rem; }
+    @media (min-width: 640px) { .manuals-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .manuals-grid { grid-template-columns: repeat(3, 1fr); } }
+    .manual-card {
+      overflow: hidden; border-radius: .9rem; background: var(--panel);
+      border: 1px solid rgba(217, 168, 78, .25); transition: .3s;
+    }
+    .manual-card:hover {
+      transform: translateY(-4px); border-color: rgba(217, 168, 78, .6);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, .5);
+    }
+    .manual-media { position: relative; aspect-ratio: 3 / 4; overflow: hidden; }
+    .manual-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s; }
+    .manual-card:hover .manual-media img { transform: scale(1.04); }
+    .manual-num {
+      position: absolute; top: .75rem; left: .75rem; padding: .25rem .7rem; border-radius: 999px;
+      background: rgba(0, 0, 0, .55); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+      color: var(--gold-l); font-family: ui-monospace, Menlo, monospace;
+      font-size: .72rem; font-weight: 700; letter-spacing: .1em;
+    }
+    .manual-body { padding: 1.2rem; }
+    .manual-title { display: flex; gap: .55rem; margin: 0; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.05rem; line-height: 1.35; color: var(--cream2); }
+    .check-dot {
+      flex: none; width: 1.15rem; height: 1.15rem; margin-top: .2rem; border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-l), var(--gold-d));
+      display: flex; align-items: center; justify-content: center; color: var(--ink);
+    }
+    .check-dot .ic { width: .65em; height: .65em; stroke-width: 3.5; }
+    .manual-desc { margin: .55rem 0 0; font-size: .88rem; line-height: 1.6; color: var(--muted); }
+
+    /* ── Banner ── */
+    .banner-wrap { max-width: 72rem; margin: 0 auto; padding: 0 1rem 4rem; }
+    @media (min-width: 640px) { .banner-wrap { padding-bottom: 5rem; } }
+    .banner {
+      position: relative; overflow: hidden; text-align: center; border-radius: 1.5rem;
+      border: 1px solid rgba(217, 168, 78, .4); padding: 2.5rem 1.5rem;
+      background: linear-gradient(90deg, var(--wine), var(--wine-mid), var(--wine));
+      box-shadow: 0 25px 60px rgba(0, 0, 0, .5);
+    }
+    @media (min-width: 640px) { .banner { padding: 3rem; } }
+    .banner h3 { margin: 0; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.9rem; color: var(--cream); }
+    @media (min-width: 640px) { .banner h3 { font-size: 2.3rem; } }
+    .banner .gold-text {
+      background: linear-gradient(90deg, var(--gold-l), var(--gold-dd));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .banner p { margin: .8rem auto 0; max-width: 36rem; font-size: .95rem; color: var(--sand2); }
+    .banner p b { color: var(--sand3); }
+    .cd-big {
+      display: block; margin-top: 1rem; font-family: ui-monospace, Menlo, monospace;
+      font-size: 1.6rem; font-weight: 700; color: var(--gold-l); font-variant-numeric: tabular-nums;
+    }
+    .banner .cta-row { justify-content: center; margin-top: 1.5rem; }
+
+    /* ── Métodos de pago ── */
+    .pay-section { border-top: 1px solid rgba(217, 168, 78, .15); border-bottom: 1px solid rgba(217, 168, 78, .15); background: rgba(28, 7, 13, .6); }
+    .pay-grid { display: grid; gap: 1.25rem; }
+    @media (min-width: 1024px) { .pay-grid { grid-template-columns: repeat(3, 1fr); } }
+    .pay-card { display: flex; flex-direction: column; border-radius: .9rem; background: var(--panel); border: 1px solid rgba(217, 168, 78, .25); }
+    .pay-body { display: flex; flex: 1; flex-direction: column; gap: 1rem; padding: 1.5rem; }
+    .pay-head { display: flex; align-items: center; gap: .8rem; }
+    .pay-ico {
+      width: 2.75rem; height: 2.75rem; flex: none; border-radius: .75rem;
+      background: linear-gradient(135deg, var(--gold-l), var(--gold-d));
+      color: var(--ink); display: flex; align-items: center; justify-content: center;
+    }
+    .pay-title { margin: 0; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.12rem; color: var(--cream2); }
+    .pay-sub { margin: .1rem 0 0; font-size: .72rem; color: #cfa96a; }
+    .pay-desc { margin: 0; font-size: .9rem; line-height: 1.6; color: var(--sand); }
+    .kv { display: flex; justify-content: space-between; gap: .75rem; font-size: .9rem; }
+    .kv .k { color: var(--muted); }
+    .kv .v { font-weight: 700; color: var(--cream2); text-align: right; }
+    .pay-note { margin-top: auto; font-size: .72rem; line-height: 1.5; color: var(--faint); }
+    .btn-gold.block { width: 100%; margin-top: auto; }
+    .copy-field {
+      display: flex; width: 100%; align-items: center; justify-content: space-between; gap: .75rem;
+      border-radius: .75rem; border: 1px solid rgba(217, 168, 78, .3); background: var(--chip);
+      padding: .8rem 1rem; cursor: pointer; text-align: left; color: inherit;
+      font-family: inherit; transition: .2s;
+    }
+    .copy-field:hover { border-color: rgba(217, 168, 78, .7); background: var(--panel); }
+    .copy-number { font-family: ui-monospace, Menlo, monospace; font-size: clamp(.82rem, 2.6vw, 1rem); font-weight: 600; letter-spacing: .04em; color: var(--cream2); white-space: nowrap; }
+    @media (min-width: 640px) { .copy-number { font-size: clamp(.82rem, 1.6vw, 1.02rem); } }
+    .copy-state .when-copied { display: none; align-items: center; gap: .3rem; font-size: .72rem; font-weight: 700; color: var(--ok); white-space: nowrap; }
+    .copy-state .when-idle { color: #cfa96a; display: inline-flex; }
+    .copy-field.copied .when-idle { display: none; }
+    .copy-field.copied .when-copied { display: inline-flex; }
+    .copy-field.copied { border-color: rgba(52, 211, 153, .5); }
+
+    /* ── Pasos ── */
+    .steps-grid { display: grid; gap: 1.25rem; }
+    @media (min-width: 640px) { .steps-grid { grid-template-columns: repeat(3, 1fr); } }
+    .step-card {
+      position: relative; border-radius: .9rem; background: var(--panel);
+      border: 1px solid rgba(217, 168, 78, .25); padding: 1.5rem; text-align: center; transition: .3s;
+    }
+    .step-card:hover { border-color: rgba(217, 168, 78, .6); }
+    .step-num {
+      position: absolute; top: .8rem; right: 1.1rem; font-family: 'Playfair Display', serif;
+      font-size: 2.5rem; font-weight: 900; color: rgba(217, 168, 78, .2); line-height: 1;
+    }
+    .step-ico {
+      width: 3.5rem; height: 3.5rem; margin: 0 auto; border-radius: 1rem;
+      border: 1px solid rgba(217, 168, 78, .4); background: var(--chip);
+      display: flex; align-items: center; justify-content: center; color: var(--gold-l);
+    }
+    .step-ico .ic { width: 1.6em; height: 1.6em; }
+    .step-title { margin: 1rem 0 0; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.1rem; color: var(--cream2); }
+    .step-desc { margin: .5rem 0 0; font-size: .88rem; line-height: 1.6; color: var(--muted); }
+    .wa-wrap { margin-top: 2.5rem; text-align: center; }
+    .btn-wa {
+      display: inline-flex; align-items: center; gap: .7rem; padding: 1rem 2rem;
+      border-radius: 999px; background: var(--wa); color: #08351c; font-weight: 700;
+      font-size: 1.05rem; text-decoration: none; box-shadow: 0 15px 35px rgba(0, 0, 0, .4); transition: .2s;
+    }
+    .btn-wa:hover { transform: scale(1.03); filter: brightness(1.1); }
+    .btn-wa:active { transform: scale(.98); }
+    .wa-note { margin: 1.1rem 0 0; font-size: .9rem; color: var(--muted); }
+    .wa-note b { color: var(--cream2); }
+
+    /* ── Footer ── */
+    .site-footer { margin-top: auto; border-top: 1px solid rgba(217, 168, 78, .2); background: var(--bg-deep); }
+    .footer-inner { max-width: 72rem; margin: 0 auto; padding: 2.5rem 1rem; text-align: center; }
+    .footer-inner .ic { width: 1.5em; height: 1.5em; color: var(--gold-l); }
+    .footer-quote {
+      max-width: 42rem; margin: 1rem auto 0; font-family: 'Playfair Display', serif;
+      font-style: italic; font-size: 1.3rem; line-height: 1.5; color: var(--sand3);
+    }
+    @media (min-width: 640px) { .footer-quote { font-size: 1.5rem; } }
+    .footer-copy { margin: 1.25rem 0 0; font-size: .75rem; color: var(--dim); }
+
+    /* ── Animaciones ── */
+    @keyframes float-y { 0%, 100% { transform: rotate(3deg) translateY(0); } 50% { transform: rotate(3deg) translateY(-12px); } }
+    @keyframes shine-sweep { 0% { transform: translateX(-130%) skewX(-18deg); } 60%, 100% { transform: translateX(230%) skewX(-18deg); } }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-logo" aria-hidden="true">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg>
+        </span>
+        <div>
+          <p class="brand-name">Pack de Manuales Digitales</p>
+          <p class="brand-sub">Webinar de Microbiología del Vino</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="cd-chip" aria-label="Tiempo restante de la oferta">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+          <span data-count>--:--:--</span>
+        </span>
+        <a class="btn-mini" href="#pago">Comprar · $409</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══ HERO ═══ -->
+    <section class="hero">
+      <div class="glow glow-1" aria-hidden="true"></div>
+      <div class="glow glow-2" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div>
+          <span class="badge">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/></svg>
+            Webinar de Microbiología del Vino
+          </span>
+          <p class="presenter">Impartido por: <b>José Guerrero Consultor</b></p>
+          <h1>Pack de <span class="gold-text">Manuales Digitales</span></h1>
+          <p class="lead">
+            Profundiza tus conocimientos enológicos con los <b>6 manuales digitales</b>
+            del webinar. Consúltalos cuando quieras y lleva tu pasión por el vino
+            al siguiente nivel.
+          </p>
+
+          <div class="price-row">
+            <span class="price-label">Por solo:</span>
+            <span class="price">$409</span>
+            <span class="price-cur">pesos MXN</span>
+          </div>
+
+          <div class="countdown-card">
+            <p class="cd-label">
+              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              ¡Oferta exclusiva solo hasta las 10:30 pm!
+            </p>
+            <div class="cd-cells" role="timer" aria-label="Cuenta regresiva hasta las 10:30 pm, hora del centro de México">
+              <div class="cd-cell"><p class="cd-num" data-cd="h">--</p><p class="cd-unit">Horas</p></div>
+              <span class="cd-colon">:</span>
+              <div class="cd-cell"><p class="cd-num" data-cd="m">--</p><p class="cd-unit">Min</p></div>
+              <span class="cd-colon">:</span>
+              <div class="cd-cell"><p class="cd-num" data-cd="s">--</p><p class="cd-unit">Seg</p></div>
+            </div>
+            <p class="cd-note">Hora del centro de México · Promoción exclusiva para asistentes del webinar</p>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn-gold" href="https://www.paypal.com/ncp/payment/PPX5JMVVQX5HN" target="_blank" rel="noopener noreferrer">
+              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+              Pagar ahora con PayPal
+            </a>
+            <a class="btn-outline" href="#pago">
+              Ver métodos de pago
+              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="poster-wrap">
+          <div class="poster-glow" aria-hidden="true"></div>
+          <div class="float-badge">
+            <p class="t1">Promoción exclusiva</p>
+            <p class="t2">Asistentes del webinar</p>
+          </div>
+          <div class="poster-frame">
+            <img src="poster.jpg" alt="Pack digital de manuales sobre vino: análisis sensorial, bioquímica, defectos, variedades de uva, terroir y tecnología de vinificación" width="1100" height="1100" />
+          </div>
+        </div>
+      </div>
+
+      <div class="strip">
+        <div class="strip-inner">
+          <div class="strip-item">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            6 manuales digitales
+          </div>
+          <div class="strip-item">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.6 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1.2 1.2 0 0 1 1.6 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            Pago seguro
+          </div>
+          <div class="strip-item">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            Entrega por WhatsApp
+          </div>
+          <div class="strip-item">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+            Oferta hasta 10:30 pm
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ LOS 6 MANUALES ═══ -->
+    <section class="section" id="manuales">
+      <div class="sec-title">
+        <p class="sec-kicker">Lo que incluye</p>
+        <h2>6 manuales digitales completos</h2>
+        <p class="sec-sub">Cada manual es material digital de consulta permanente, elaborado por José Guerrero Consultor para complementar el Webinar de Microbiología del Vino.</p>
+      </div>
+      <div class="manuals-grid">
+        <article class="manual-card">
+          <div class="manual-media">
+            <img src="manuales/analisis-sensorial.jpg" alt="Portada del manual: Análisis Sensorial del Vino" width="600" height="800" loading="lazy" />
+            <span class="manual-num">01 / 06</span>
+          </div>
+          <div class="manual-body">
+            <h3 class="manual-title">
+              <span class="check-dot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Análisis Sensorial del Vino
+            </h3>
+            <p class="manual-desc">Aprende a catar, identificar aromas y evaluar la calidad como un experto.</p>
+          </div>
+        </article>
+        <article class="manual-card">
+          <div class="manual-media">
+            <img src="manuales/bioquimica.jpg" alt="Portada del manual: Bioquímica del Vino" width="600" height="800" loading="lazy" />
+            <span class="manual-num">02 / 06</span>
+          </div>
+          <div class="manual-body">
+            <h3 class="manual-title">
+              <span class="check-dot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Bioquímica del Vino
+            </h3>
+            <p class="manual-desc">La ciencia detrás de la fermentación, los compuestos y los aromas.</p>
+          </div>
+        </article>
+        <article class="manual-card">
+          <div class="manual-media">
+            <img src="manuales/defectos.jpg" alt="Portada del manual: Defectos, Enfermedades y Correcciones del Vino" width="600" height="800" loading="lazy" />
+            <span class="manual-num">03 / 06</span>
+          </div>
+          <div class="manual-body">
+            <h3 class="manual-title">
+              <span class="check-dot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Defectos, Enfermedades y Correcciones del Vino
+            </h3>
+            <p class="manual-desc">Detecta, previene y corrige los problemas más comunes del vino.</p>
+          </div>
+        </article>
+        <article class="manual-card">
+          <div class="manual-media">
+            <img src="manuales/variedades-uva.jpg" alt="Portada del manual: Variedades de Uva para Vinificación" width="600" height="800" loading="lazy" />
+            <span class="manual-num">04 / 06</span>
+          </div>
+          <div class="manual-body">
+            <h3 class="manual-title">
+              <span class="check-dot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Variedades de Uva para Vinificación
+            </h3>
+            <p class="manual-desc">Cada cepa, su carácter y su potencial en la copa.</p>
+          </div>
+        </article>
+        <article class="manual-card">
+          <div class="manual-media">
+            <img src="manuales/terroir.jpg" alt="Portada del manual: Terroir y Fisiología de la Vid" width="600" height="800" loading="lazy" />
+            <span class="manual-num">05 / 06</span>
+          </div>
+          <div class="manual-body">
+            <h3 class="manual-title">
+              <span class="check-dot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Terroir y Fisiología de la Vid
+            </h3>
+            <p class="manual-desc">Suelo, clima y fisiología: el origen del carácter de cada vino.</p>
+          </div>
+        </article>
+        <article class="manual-card">
+          <div class="manual-media">
+            <img src="manuales/tecnologia.jpg" alt="Portada del manual: Tecnología e Ingeniería de la Vinificación" width="600" height="800" loading="lazy" />
+            <span class="manual-num">06 / 06</span>
+          </div>
+          <div class="manual-body">
+            <h3 class="manual-title">
+              <span class="check-dot"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              Tecnología e Ingeniería de la Vinificación
+            </h3>
+            <p class="manual-desc">Equipos, procesos y manejo de bodega, paso a paso.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══ BANNER CTA ═══ -->
+    <section class="banner-wrap">
+      <div class="banner">
+        <h3>Los 6 manuales por solo <span class="gold-text">$409 MXN</span></h3>
+        <p>Promoción exclusiva para asistentes del webinar · <b>¡Solo hasta las 10:30 pm!</b></p>
+        <span class="cd-big" data-count>--:--:--</span>
+        <div class="cta-row">
+          <a class="btn-gold" href="https://www.paypal.com/ncp/payment/PPX5JMVVQX5HN" target="_blank" rel="noopener noreferrer">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+            Pagar con PayPal
+          </a>
+          <a class="btn-outline" href="#pago">Depósito o transferencia</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ MÉTODOS DE PAGO ═══ -->
+    <section class="pay-section" id="pago">
+      <div class="section">
+        <div class="sec-title">
+          <p class="sec-kicker">Elige tu método</p>
+          <h2>Métodos de pago</h2>
+          <p class="sec-sub">Paga con PayPal, depósito con tarjeta o transferencia electrónica. Al terminar, envía tu comprobante por WhatsApp para recibir tu pack.</p>
+        </div>
+        <div class="pay-grid">
+
+          <!-- PayPal -->
+          <article class="pay-card">
+            <div class="pay-body">
+              <div class="pay-head">
+                <span class="pay-ico">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+                </span>
+                <div>
+                  <h3 class="pay-title">PayPal</h3>
+                  <p class="pay-sub">Pago en línea seguro</p>
+                </div>
+              </div>
+              <p class="pay-desc">Paga con tu cuenta de PayPal o con tarjeta, sin compartir tus datos bancarios con el vendedor.</p>
+              <a class="btn-gold block" href="https://www.paypal.com/ncp/payment/PPX5JMVVQX5HN" target="_blank" rel="noopener noreferrer">
+                Pagar $409 MXN
+                <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Depósito / tarjeta -->
+          <article class="pay-card">
+            <div class="pay-body">
+              <div class="pay-head">
+                <span class="pay-ico">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                </span>
+                <div>
+                  <h3 class="pay-title">Depósito / Tarjeta</h3>
+                  <p class="pay-sub">Número de tarjeta BBVA</p>
+                </div>
+              </div>
+              <button type="button" class="copy-field" data-copy="4152314598133463" aria-label="Copiar número de tarjeta 4152 3145 9813 3463">
+                <span class="copy-number">4152&nbsp; 3145&nbsp; 9813&nbsp; 3463</span>
+                <span class="copy-state">
+                  <span class="when-idle">
+                    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  </span>
+                  <span class="when-copied">
+                    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    ¡Copiado!
+                  </span>
+                </span>
+              </button>
+              <div>
+                <div class="kv"><span class="k">Banco</span><span class="v">BBVA</span></div>
+                <div class="kv" style="margin-top:.35rem"><span class="k">Titular</span><span class="v">José Guerrero Garfias</span></div>
+              </div>
+              <p class="pay-note">Depósito en ventanilla o pago con tarjeta desde la app BBVA. Toca el número para copiarlo.</p>
+            </div>
+          </article>
+
+          <!-- CLABE -->
+          <article class="pay-card">
+            <div class="pay-body">
+              <div class="pay-head">
+                <span class="pay-ico">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+                </span>
+                <div>
+                  <h3 class="pay-title">Transferencia (CLABE)</h3>
+                  <p class="pay-sub">Transferencia electrónica SPEI</p>
+                </div>
+              </div>
+              <button type="button" class="copy-field" data-copy="012074015586656437" aria-label="Copiar CLABE 012 074 01558665643 7">
+                <span class="copy-number">012&nbsp; 074&nbsp; 01558665643&nbsp; 7</span>
+                <span class="copy-state">
+                  <span class="when-idle">
+                    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  </span>
+                  <span class="when-copied">
+                    <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    ¡Copiado!
+                  </span>
+                </span>
+              </button>
+              <div>
+                <div class="kv"><span class="k">Banco</span><span class="v">BBVA</span></div>
+                <div class="kv" style="margin-top:.35rem"><span class="k">Titular</span><span class="v">José Guerrero Garfias</span></div>
+              </div>
+              <p class="pay-note">Transfiere desde cualquier banco usando la CLABE. Toca el número para copiarlo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ DESPUÉS DEL PAGO ═══ -->
+    <section class="section" id="comprobante">
+      <div class="sec-title">
+        <p class="sec-kicker">Último paso</p>
+        <h2>¿Ya pagaste? Envía tu comprobante</h2>
+        <p class="sec-sub">Una vez realizado el pago, mándanos los siguientes datos por WhatsApp para recibir tu pack digital.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card">
+          <span class="step-num" aria-hidden="true">1</span>
+          <span class="step-ico">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          </span>
+          <h3 class="step-title">Comprobante de pago</h3>
+          <p class="step-desc">Foto o captura de tu pago por PayPal, depósito o transferencia.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num" aria-hidden="true">2</span>
+          <span class="step-ico">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </span>
+          <h3 class="step-title">Correo electrónico</h3>
+          <p class="step-desc">Tu email para enviarte ahí el pack digital de manuales.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num" aria-hidden="true">3</span>
+          <span class="step-ico">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </span>
+          <h3 class="step-title">Nombre completo</h3>
+          <p class="step-desc">Para registrar tu compra y confirmar tu acceso.</p>
+        </article>
+      </div>
+      <div class="wa-wrap">
+        <a class="btn-wa" href="https://wa.me/524921344124?text=Hola%20%F0%9F%91%8B%20Te%20comparto%20el%20comprobante%20de%20pago%20del%20*Pack%20de%20Manuales%20Digitales*%20(%24409%20MXN).%0A%0A%F0%9F%91%A4%20Nombre%20completo%3A%20%0A%F0%9F%93%A7%20Correo%20electr%C3%B3nico%3A%20%0A%F0%9F%93%B8%20Comprobante%3A%20lo%20adjunto%20en%20este%20chat." target="_blank" rel="noopener noreferrer">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          Enviar comprobante por WhatsApp
+        </a>
+        <p class="wa-note">WhatsApp: <b>492 134 4124</b></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <p class="footer-quote">“Profundiza tus conocimientos y lleva tu pasión por el vino al siguiente nivel.”</p>
+      <p class="footer-copy">© <span id="year">2026</span> · Webinar de Microbiología del Vino · José Guerrero Consultor</p>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Temporizador: cuenta regresiva a las 10:30 pm (hora CDMX, UTC-6) ── */
+    (function () {
+      var CDMX = 'America/Mexico_City';
+      var fmt = new Intl.DateTimeFormat('en-CA', {
+        timeZone: CDMX, year: 'numeric', month: '2-digit', day: '2-digit'
+      });
+      function nextDeadline() {
+        var now = Date.now();
+        var t = Date.parse(fmt.format(new Date()) + 'T22:30:00-06:00');
+        while (t <= now) t += 86400000; /* si ya pasó hoy, cuenta al día siguiente */
+        return t;
+      }
+      function pad(n) { return String(n).padStart(2, '0'); }
+      function tick() {
+        var diff = Math.max(0, nextDeadline() - Date.now());
+        var h = Math.floor(diff / 3600000);
+        var m = Math.floor((diff % 3600000) / 60000);
+        var s = Math.floor((diff % 60000) / 1000);
+        var str = pad(h) + ':' + pad(m) + ':' + pad(s);
+        document.querySelectorAll('[data-count]').forEach(function (el) { el.textContent = str; });
+        document.querySelectorAll('[data-cd]').forEach(function (el) {
+          var k = el.getAttribute('data-cd');
+          el.textContent = k === 'h' ? pad(h) : k === 'm' ? pad(m) : pad(s);
+        });
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+
+    /* ── Botones de copiar ── */
+    document.querySelectorAll('[data-copy]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var value = btn.getAttribute('data-copy');
+        function done() {
+          btn.classList.add('copied');
+          clearTimeout(btn._t);
+          btn._t = setTimeout(function () { btn.classList.remove('copied'); }, 2200);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(value).then(done).catch(function () { fallback(); });
+        } else { fallback(); }
+        function fallback() {
+          var ta = document.createElement('textarea');
+          ta.value = value;
+          ta.style.position = 'fixed'; ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.focus(); ta.select();
+          try { document.execCommand('copy'); } catch (e) {}
+          ta.remove();
+          done();
+        }
+      });
+    });
+
+    /* ── Año del footer ── */
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
